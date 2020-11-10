@@ -1,6 +1,11 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const os = require('os-utils');
+require('update-electron-app')({
+  repo: 'RoxBibop/monitoring',
+  updateInterval: '5 minutes',
+});
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
   app.quit();
@@ -33,7 +38,6 @@ const createWindow = () => {
   },1000);
 };
 
-/
 app.on('ready', createWindow);
 
 
