@@ -6,7 +6,21 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div class="w100 flexCenterCenter title mT10 mB10">Monitoring</div>
+
+    <div id="notification" class="hidden">
+      <p id="message"></p>
+      <button id="close-button" onClick="closeNotification()">
+        Close
+      </button>
+      <button id="restart-button" onClick="restartApp()" class="hidden">
+        Restart
+      </button>
+    </div>
+
+
+
+    <div class="w100 flexCenterCenter title mT10">Monitoring</div>
+    <p id="version" class="m0 mB10"></p>
     <div class="ctn mB20 flexCenterCenter borderRadius flexVertical">
       <div class="w100 flex">
         <p>Utilisation du CPU : </p>
