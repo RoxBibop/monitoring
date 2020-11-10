@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Monitoring</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="w100 flexCenterCenter title mT10 mB10">Monitoring</div>
+    <div class="ctn mB20 flexCenterCenter borderRadius flexVertical">
+      <div class="w100 flex">
+        <p>Utilisation du CPU : </p>
+        <p id="cpuVal" class="mL5"> - </p>
+      </div>
+      <canvas id="myChart" width="20" height="200"></canvas>
+    </div>
+
+    <div class="bigCtn flex spaceBetween">
+      <div class="ctn2 flexCenterCenter borderRadius flexVertical mR20">
+        <span class="label">Mémoire disponible (%)</span>
+        <span id="mem" class="font40">-</span>
+      </div>
+
+      <div class="ctn2 flexCenterCenter borderRadius flexVertical mR20">
+        <span class="label">Mémoire totale (GB)</span>
+        <span id="total-mem" class="font40">-</span>
+      </div>
+
+      <div class="ctn2 flexCenterCenter borderRadius flexVertical">
+        <span class="label">Système</span>
+        <span id="platform" class="font40">-</span>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="box">
+
+    <div class="box">
+
+    </div>
+    <div class="box">
+      <span class="label">Total Mem (GB)</span>
+      <span id="total-mem">-</span>
+    </div> -->
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</html>

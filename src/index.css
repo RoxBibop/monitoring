@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin : 0;
+  font-family: -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               Helvetica,
+               Arial,
+               sans-serif;
+  background: rgb(36, 36, 36);
+  color: rgb(207, 207, 207);
+  overflow: hidden;
+  width : 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  height : 30px;
+  font-size: 20px;
+}
+
+.ctn {
+  height : 300px;
+  width : 750px;
+  background-color: rgb(43, 42, 42);
+  padding: 40px;
+  box-shadow: 0px 0px 29px -6px rgba(0, 0, 0, 0.425);
+}
+
+.bigCtn {
+  width : 750px;
+}
+
+.ctn2 {
+  background-color: rgb(43, 42, 42);
+  padding: 40px;
+  box-shadow: 0px 0px 29px -6px rgba(0, 0, 0, 0.425);
+}
+
+
+.flex {
+  display: flex;
+}
+.flexCenterCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexVertical {
+  flex-direction: column;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.w100 {
+  width : 100%;
+}
+.mT10 {
+  margin-top: 10px;
+}
+.mL5 {
+  margin-left: 5px;
+}
+.mR20 {
+  margin-right: 20px;
+}
+.mB10 {
+  margin-bottom: 10px;
+}
+.mB20 {
+  margin-bottom: 20px;
+}
+.borderRadius {
+  border-radius: 5px;
+}
+.font40 {
+  font-size: 40px;
+}
